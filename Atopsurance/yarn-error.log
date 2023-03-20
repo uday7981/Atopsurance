@@ -1,0 +1,47 @@
+Arguments: 
+  /opt/homebrew/Cellar/node/19.7.0/bin/node /opt/homebrew/bin/yarn add ethers
+
+PATH: 
+  /Users/udaykiran/Library/Application Support/cloud-code/installer/google-cloud-sdk/bin:/Users/udaykiran/.local/share/solana/install/active_release/bin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/udaykiran/Library/Application Support/cloud-code/installer/google-cloud-sdk/bin:/Users/udaykiran/.local/share/solana/install/active_release/bin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/Users/udaykiran/.cargo/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.7.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error [ERR_TLS_CERT_ALTNAME_INVALID]: Hostname/IP does not match certificate's altnames: Host: raw.githubusercontent.com. is not in the cert's altnames: DNS:dns.google, DNS:dns.google.com, DNS:*.dns.google.com, DNS:8888.google, DNS:dns64.dns.google, IP Address:8.8.8.8, IP Address:8.8.4.4, IP Address:2001:4860:4860:0:0:0:0:8888, IP Address:2001:4860:4860:0:0:0:0:8844, IP Address:2001:4860:4860:0:0:0:0:6464, IP Address:2001:4860:4860:0:0:0:0:64
+      at new NodeError (node:internal/errors:399:5)
+      at Object.checkServerIdentity (node:tls:337:12)
+      at TLSSocket.onConnectSecure (node:_tls_wrap:1550:27)
+      at TLSSocket.emit (node:events:512:28)
+      at TLSSocket._finishInit (node:_tls_wrap:959:8)
+      at ssl.onhandshakedone (node:_tls_wrap:743:12)
+
+npm manifest: 
+  {
+    "name": "workshop-honeycomb-request",
+    "version": "1.0.0",
+    "description": "An example project used in the workshop, Making a Honeycomb Request",
+    "main": "test.js",
+    "scripts": {
+      "deploy-ropsten": "truffle migrate --network ropsten --reset",
+      "test-ropsten": "truffle exec test.js --network ropsten"
+    },
+    "author": "CLCG",
+    "license": "ISC",
+    "dependencies": {
+      "chainlink": "^0.7.5",
+      "truffle-hdwallet-provider": "^1.0.17"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
